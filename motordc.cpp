@@ -32,7 +32,7 @@ void loop() {
    if(sensorest1==LOW && sensorest2==LOW){ //condição de quando o motor deve girar
     digitalWrite(motor1pin1, LOW);
     digitalWrite(motor2pin1, LOW); 
-    analogWrite(vel, 80); //escolhe velocidade
+    analogWrite(vel, 80); //escolhe velocidade entre 0 a 255
     analogWrite(vel1, 200);
   }
     if(sensorest1==LOW && sensorest2==HIGH || sensorest1==HIGH && sensorest2==HIGH){
