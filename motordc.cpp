@@ -21,14 +21,7 @@ void loop() {
 
   int sensorest2=digitalRead(sensore2); //variável que armazena valor dos sensores
   int sensorest1=digitalRead(sensore1);
-
- /* if(sensorest1==LOW && sensorest2==LOW || sensorest1==HIGH && sensorest2==LOW){ //condição de quando o motor deve girar
-    digitalWrite(motor1pin1, HIGH);
-    digitalWrite(motor2pin1, HIGH); 
-    analogWrite(vel, 80); //escolhe velocidade
-    analogWrite(vel1, 200);
-  }
-  */
+  
    if(sensorest1==LOW && sensorest2==LOW){ //condição de quando o motor deve girar
     digitalWrite(motor1pin1, LOW);
     digitalWrite(motor2pin1, LOW); 
